@@ -2,6 +2,7 @@ import React from 'react';
 import Movie from './Movie.js';
 import Person from './Person';
 import CreditCardInput from './CreditCardInput';
+import ImageSearch from './ImageSearch';
 
 const movies = [
   {id:1,title:"True Romance", year:1993},
@@ -14,9 +15,10 @@ class App extends React.Component{
   render(){
     return (
       <div>
-        <CreditCardInput />
+        {/* <CreditCardInput />
         <Movie movies={movies}/>
-        <Person />
+        <Person /> */}
+        <ImageSearch />
       </div>
     );
   }
