@@ -1,11 +1,22 @@
 import React from 'react';
+import Movie from './Movie.js';
+import Person from './Person';
+import CreditCardInput from './CreditCardInput';
+
+const movies = [
+  {id:1,title:"True Romance", year:1993},
+  {id:2,title:"Pulp Fiction", year:1994},
+  {id:3,title:"Zoolander", year:2001},
+  {id:4,title:"The Royal Tenenbaums", year:2001}
+]
 
 class App extends React.Component{
   render(){
     return (
       <div>
-        <h1 className="main-heading">Hello, world!</h1>
-        <p>Welcome to our first React component</p>
+        <CreditCardInput />
+        <Movie movies={movies}/>
+        <Person />
       </div>
     );
   }
