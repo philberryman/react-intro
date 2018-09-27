@@ -27,3 +27,15 @@
     height: 10rem;
     object-fit: cover;
 }
+
+.form {
+    display: flex;
+    flex-direction:column;
+}
+
+.form__input, .form__label, .form__submit {
+    width: 10rem;
+    margin: 0.5rem;
+}
+
+
